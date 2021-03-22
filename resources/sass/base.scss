@@ -1,0 +1,32 @@
+//variables
+@import 'variables';
+
+/* base 
+-----------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $text-font;
+  font-size: 1.6em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+  opacity: .8;
+  transition-duration: .5s;
+  }
+}
