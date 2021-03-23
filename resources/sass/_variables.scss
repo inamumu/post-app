@@ -1,7 +1,7 @@
 $layout-width: 1280px;
 $text-color:rgba(0,0,0,0.87);
 $text-font: YakuHanJP, Roboto, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "Source Sans Pro", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", sans-serif;
-$main-background: #fff;
+$main-background: #e5e2df;
 
 // ブレークポイント
 $breakpoints: (
@@ -21,3 +21,6 @@ $breakpoints: (
 //@include mq('md') {}
 //@include mq('lg') {}
 //@include mq('xl') {}
+
+//colors
+$brown: #ada6ae;
