@@ -3,3 +3,120 @@
 
 /* 共通
 -----------------------------------*/
+.header {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid $brown;
+  .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $layout-width;
+    margin: 0 auto;
+    .head01 {
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.8rem;
+      }
+    }
+    .global_nav {
+      ul {
+        display: flex;
+        li {
+          margin-left: 20px;
+          &:first-child {
+            margin-left: 0;
+          }
+          a {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            display: block;
+            padding: 10px;
+            color: $text-color;
+            &::before, &::after {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              width: 0;
+              border-bottom: 1px solid $brown;;
+              transition: all .3s ease;
+              -webkit-transition: all .3s ease;
+            }
+            &::before {
+              left: 50%;
+            }
+            &::after {
+              right: 50%;
+            }
+            &:hover {
+              &::before, &::after {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  width: 100%;
+  padding: 60px 0;
+  .main_inner {
+    max-width: $layout-width;
+    margin: 0 auto;
+    .head02 {
+      h2 {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.2rem;
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 0;
+          background-color: $brown;
+          width: 70%;
+          height: 3px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  .footer_inner {
+    max-width: $layout-width;
+    margin: 0 auto;
+    .copyright {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+}
+
+/* List
+-------------------*/
+.list {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.column {
+  margin-top: 30px;
+  .col {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid $brown;
+    border-radius: 5px;
+    &:hover {
+      transition-duration: .5s;
+      box-shadow: 0 0 6px $brown;
+    }
+  }
+}

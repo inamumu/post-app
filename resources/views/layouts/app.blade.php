@@ -15,13 +15,14 @@
 </head>
 <body>
   <div id="app">
-    <App />
     <header class="header">
+      @yield('header')
     </header>
     <main class="main">
       @yield('content')
     </main>
     <footer class="footer">
+      @yield('footer')
     </footer>
   </div>
 </body>
