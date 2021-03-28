@@ -1,7 +1,7 @@
 @section('header')
 <div class="header_inner">
   <div class="head01">
-    <h1>Logo</h1>
+    <h1><a href="/">Logo</a></h1>
   </div>
   <nav class="nav">
     <div class="toggle">
@@ -13,7 +13,7 @@
       <ul>
         @guest
         <li><a href="{{ route('register') }}">Register</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="{{ route('login')}}">Login</a></li>
         @endguest
         @auth
         <li><a href="">MyPage</a></li>
