@@ -17,7 +17,7 @@
         @endguest
         @auth
         <li><a href="">MyPage</a></li>
-        <li><a href="">Post</a></li>
+        <li><a href="{{ route('articles.create') }}">Post</a></li>
         <li><button form="logout-button" class="dropdown-item" type="submit">ログアウト</button></li>
         @endauth
         <li><a href="">Contact</a></li>
