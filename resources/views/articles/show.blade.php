@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '記事一覧')
+@section('title', '記事詳細')
 
 @include('layouts.header')
 
@@ -8,12 +8,11 @@
 <div class="main_inner">
   <section class="list">
     <div class="head02">
-      <h2>List</h2>
+      <h2>記事詳細</h2>
     </div>
     <div class="column">
-      @foreach($articles as $article)
       <div class="col">
-        <p class="username"><a href="{{ route('articles.show', ['article' => $article]) }}">{{ $article->user->name }}</a></p>
+        <p class="username">{{ $article->user->name }}</p>
         <p class="time"> {{ $article->created_at->format('Y/m/d H:i') }}</p>
         <p class="title">{{ $article->title }}</p>
         <p class="content">{!! nl2br(e( $article->body )) !!}</p>
@@ -28,7 +27,6 @@
         </p>
         @endif
       </div>
-      @endforeach
     </div>
   </section>
 </div>
